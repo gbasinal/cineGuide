@@ -1,0 +1,20 @@
+{
+  "name": "cineguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gierrmann/cineGuide.git"
+  },
+  "author": "Gie Basinal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gierrmann/cineGuide/issues"
+  },
+  "homepage": "https://github.com/gierrmann/cineGuide#readme"
+}
