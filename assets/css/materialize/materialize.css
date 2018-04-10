@@ -1,8 +1,4 @@
-/*!
- * Materialize v1.0.0-beta (http://materializecss.com)
- * Copyright 2014-2017 Materialize
- * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
- */
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -8987,7 +8983,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   fill: #26a69a;
 }
 
-/* Footer */
+
 .timepicker-footer {
   margin: 0 auto;
   padding: 5px 1rem;
@@ -9014,7 +9010,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   padding: 0 20px;
 }
 
-/* Media Queries */
+
 @media only screen and (min-width: 601px) {
   .timepicker-modal {
     max-width: 600px;

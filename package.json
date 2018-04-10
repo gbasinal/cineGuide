@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/gierrmann/cineGuide/issues"
   },
-  "homepage": "https://github.com/gierrmann/cineGuide#readme"
+  "homepage": "https://github.com/gierrmann/cineGuide#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "movie-info": "^2.0.3",
+    "nodemon": "^1.17.3"
+  }
 }
