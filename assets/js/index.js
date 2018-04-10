@@ -1,15 +1,8 @@
 
-
-
-
 $(document).ready(function() {
 
 	$('input#input_text, textarea#textarea2').characterCounter();
 	$('.collapsible').collapsible();
-
-
-
-});
 
 	$('#submit').click(function(){
 		 searched = $('textarea#searchID').val();
@@ -23,3 +16,6 @@ $(document).ready(function() {
 		.then(console.log)
 		.catch(console.log) 		
 	})
+
+});
+

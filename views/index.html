@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>cineGuide</title>
-
+	
 	<link  rel="stylesheet" href="/assets/css/materialize/fonts.css">
 	<link  rel="stylesheet" href="/assets/css/materialize/materialize.min.css">
 	<link  rel="stylesheet" href="/assets/css/index.css">
@@ -16,15 +16,17 @@
 	<div class="search-container">
 		<div>&nbsp;</div>
 		<div class="form">
-			<div class="input-field ">
-				<textarea id="searchID" class="materialize-textarea"></textarea>
-				<label for="searchID">Search Now! <span><i class="material-icons right">local_movies</i></span></label>
-			</div>
-			<div class="center-align">
-				<button class="btn waves-effect waves-light center-align" id="submit">Submit
-					<i class="material-icons right">send</i>
-				</button>					
-			</div>
+			<form action="/" method="get">
+				<div class="input-field ">
+					<textarea id="searchID" class="materialize-textarea" name="result"></textarea>
+					<label for="searchID">Search Now! <span><i class="material-icons right">local_movies</i></span></label>
+				</div>
+				<div class="center-align">
+					<button class="btn waves-effect waves-light center-align" id="submit" type="submit">Submit
+						<i class="material-icons right">send</i>
+					</button>					
+				</div>
+			</form>
 		
 		</div>
 		<div>&nbsp;</div>
@@ -47,7 +49,6 @@
 
 	<script src="/assets/js/jquery-3-3-1.js"></script>
 	<script src="/assets/js/materialize/materialize.min.js"></script>
-	<script src="server.js"></script>
 	<script src="/assets/js/index.js"></script>
 </body>
 </html>
