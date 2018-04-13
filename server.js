@@ -23,25 +23,24 @@ app.listen(3100,function(){
 });
 
 
-
 app.get('/movies', function(req, res) {
     var searchresult = req.query.result;
     console.log(searchresult);
+    const url = 'https://api.themoviedb.org/3/search/movie?api_key=9d2bff12ed955c7f1f74b83187f188ae&query=avatar';
 
-	movieInfo(searchresult).then(
-	    function (res) {
-	        results = res;   
-	        resultsStr = JSON.stringify(results);
-	        
-	        console.log(resultsStr)
-	        //=> { ... }
-	    },
-	    function (err) {
-	        // failed
-	    }
-	)
+    fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+    	$('#movie-result').html(data);
+    })
+    .catch((error) => console.log(err))
 
-	res.redirect('back');
+
+
+	res.redirect('/');
 
 });
 
+
+
+// https://api.themoviedb.org/3/search/movie?api_key=9d2bff12ed955c7f1f74b83187f188ae&query=avatar
