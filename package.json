@@ -25,6 +25,7 @@
     "jquery": "^3.3.1",
     "jsdom": "^11.7.0",
     "movie-info": "^2.0.3",
+    "node-fetch": "^2.1.2",
     "nodemon": "^1.17.3"
   }
 }

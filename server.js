@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
+const fetch = require('node-fetch');
 var movieInfo = require('movie-info')
 
 
@@ -26,20 +27,21 @@ app.listen(3100,function(){
 app.get('/movies', function(req, res) {
     var searchresult = req.query.result;
     console.log(searchresult);
-    const url = 'https://api.themoviedb.org/3/search/movie?api_key=9d2bff12ed955c7f1f74b83187f188ae&query=avatar';
+    const url = "https://api.themoviedb.org/3/search/movie?api_key=9d2bff12ed955c7f1f74b83187f188ae&query=" + searchresult ;
 
     fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-    	$('#movie-result').html(data);
-    })
-    .catch((error) => console.log(err))
+        .then(res => res.json())
+        .then(json =>res.send(json));
+        
 
 
-
-	res.redirect('/');
-
+	
 });
+
+
+
+
+  
 
 
 
